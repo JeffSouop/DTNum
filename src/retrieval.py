@@ -69,6 +69,8 @@ class MoteurRechercheFiches:
     def _vectoriser_question(self, question: str):
         return self.pipeline.transform([question])
 
+
+
     def rechercher(
         self, question: str, nombre_resultats: int = 5
     ) -> list[ResultatRecherche]:
